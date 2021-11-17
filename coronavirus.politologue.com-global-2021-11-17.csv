@@ -1,0 +1,39 @@
+#Source de ce jeu de données : https://coronavirus.politologue.com - Les données proposées dans ce fichier sont une compilation des données proposées par le CSSE (The Johns Hopkins University) https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6
+#Les données de ce fichier sont celles qui sont produites pour générer les graphiques sur https: //coronavirus.politologue.com
+#Vous pouvez utiliser ces données sans problème et une référence à https://coronavirus.politologue.com sera appréciable
+-----------------------------------------------
+#Certains ne respectent pas la demande de ne pas récupérer trop souvent le fichier pour préserver le serveur (cela ne sert à rien de récupérer toutes les 3 min), le fichier présente désormais les 30 derniers jours seulement
+#Si vous souhaitez avoir accès à l'ensemble, contactez moi, je n'ai pas le temps de faire la chasse à ceux qui ne respectent pas une certaine éthique, alors je fais en sorte de préserver mes ressources
+-----------------------------------------------
+Date;Infections;Deces;Guerisons;TauxDeces;TauxGuerison;TauxInfection
+2021-11-17;254636048;5119385;0;2.01;0.00;97.99
+2021-11-16;254254247;5113175;0;2.01;0.00;97.99
+2021-11-15;253754723;5105496;0;2.01;0.00;97.99
+2021-11-14;253268657;5099867;0;2.01;0.00;97.99
+2021-11-13;252869921;5094243;0;2.01;0.00;97.99
+2021-11-12;252387916;5086683;0;2.02;0.00;97.98
+2021-11-11;251856087;5078505;0;2.02;0.00;97.98
+2021-11-10;251406520;5072104;0;2.02;0.00;97.98
+2021-11-09;250846628;5064350;0;2.02;0.00;97.98
+2021-11-08;250367330;5055955;0;2.02;0.00;97.98
+2021-11-07;249877000;5049261;0;2.02;0.00;97.98
+2021-11-06;249544565;5044867;0;2.02;0.00;97.98
+2021-11-05;249133045;5038368;0;2.02;0.00;97.98
+2021-11-04;248621304;5029835;0;2.02;0.00;97.98
+2021-11-03;248096505;5022207;0;2.02;0.00;97.98
+2021-11-02;247578392;5013914;0;2.03;0.00;97.97
+2021-11-01;247148066;5006355;0;2.03;0.00;97.97
+2021-10-31;246725414;5000096;0;2.03;0.00;97.97
+2021-10-30;246405741;4995689;0;2.03;0.00;97.97
+2021-10-29;246024844;4989532;0;2.03;0.00;97.97
+2021-10-28;245517786;4981549;0;2.03;0.00;97.97
+2021-10-27;245059414;4973035;0;2.03;0.00;97.97
+2021-10-26;244549456;4963445;0;2.03;0.00;97.97
+2021-10-25;244097101;4955579;0;2.03;0.00;97.97
+2021-10-24;243691280;4948410;0;2.03;0.00;97.97
+2021-10-23;243374239;4943926;0;2.03;0.00;97.97
+2021-10-22;242986640;4938261;0;2.03;0.00;97.97
+2021-10-21;242497669;4930127;0;2.03;0.00;97.97
+2021-10-20;242040335;4922526;0;2.03;0.00;97.97
+2021-10-19;241572651;4913939;0;2.03;0.00;97.97
+2021-10-18;241131400;4905094;0;2.03;0.00;97.97

@@ -19,7 +19,8 @@ st.set_page_config(page_title="BITCOIN, l'or numérique", page_icon=image1, layo
 st.title("BITCOIN, l'or numérique")
 
 # Affichage Image Bitcoin
-st.image(image1)
+st.image(image1, use_column_width= True)
+st.markdown('<style>body{background-color: lightblue ;}</style>',unsafe_allow_html= True)
 
 # Détermination des dates
 start1 = dt.datetime.today() - dt.timedelta(2 * 365)

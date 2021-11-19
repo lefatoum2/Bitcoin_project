@@ -12,8 +12,7 @@ from PIL import Image
 # Image
 image1 = Image.open('./bitcoin.jpeg')
 
-st.set_page_config(page_title="BITCOIN, l'or numérique", page_icon=image1, layout='wide', initial_sidebar_state="auto",
-                   menu_items=None)
+st.set_page_config(page_title="BITCOIN, l'or numérique", page_icon=image1, layout='wide', initial_sidebar_state="auto")
 
 # Titre
 st.title("BITCOIN, l'or numérique")

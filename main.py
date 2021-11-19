@@ -63,7 +63,7 @@ with col1:
 # Affichage BTC
 with col2:
     st.header("BTC")
-    fig2 = go.Figure(data=go.Scatter(y=df_bnb[ticker1]))
+    fig2 = go.Figure(data=go.Scatter(y=df_btc[ticker1]))
     fig2.update_layout(
         title={
             'text': "BTC",
@@ -77,7 +77,7 @@ col3, col4 = st.columns(2)
 # Affichage SOL
 with col3:
     st.header("SOL")
-    fig3 = go.Figure(data=go.Scatter(y=df_bnb[ticker1]))
+    fig3 = go.Figure(data=go.Scatter(y=df_sol[ticker1]))
     fig3.update_layout(
         title={
             'text': "SOL",
@@ -90,7 +90,7 @@ with col3:
 # Affichage USDT
 with col4:
     st.header("USDT-USD")
-    fig4 = go.Figure(data=go.Scatter(y=df_bnb[ticker1]))
+    fig4 = go.Figure(data=go.Scatter(y=df_usdt[ticker1]))
     fig4.update_layout(
         title={
             'text': "USDT-USD",
@@ -104,7 +104,7 @@ col5, col6 = st.columns(2)
 # Affichage ETH
 with col5:
     st.header("ETH")
-    fig5 = go.Figure(data=go.Scatter(y=df_bnb[ticker1]))
+    fig5 = go.Figure(data=go.Scatter(y=df_eth[ticker1]))
     fig5.update_layout(
         title={
             'text': "ETH",
@@ -117,7 +117,7 @@ with col5:
 # Affichage ADA
 with col6:
     st.header("ADA")
-    fig6 = go.Figure(data=go.Scatter(y=df_bnb[ticker1]))
+    fig6 = go.Figure(data=go.Scatter(y=df_ada[ticker1]))
     fig6.update_layout(
         title={
             'text': "ADA",

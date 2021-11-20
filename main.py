@@ -1,11 +1,8 @@
 import yfinance as yf
 import streamlit as st
 import datetime as dt
-# import talib
-import ta
 import pandas as pd
 import requests
-# yf.pdr_override()
 from PIL import Image
 
 
@@ -25,9 +22,9 @@ st.markdown('<style>body{background-color: lightblue ;}</style>',unsafe_allow_ht
 start1 = dt.datetime.today() - dt.timedelta(2 * 365)
 end1 = dt.datetime.today()
 
-start = st.sidebar.date_input('start date', start1)
+start = st.sidebar.date_input('Date de début', start1)
 
-end = st.sidebar.date_input('end date', end1)
+end = st.sidebar.date_input('Date de fin', end1)
 
 # Importation des données
 df_btc = yf.download("BTC-USD", start=start, end=end, group_by="ticker")

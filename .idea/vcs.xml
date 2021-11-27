@@ -2,7 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sentwitter" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/streamlit-12" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/streamlit-crypto-forecaster" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/streamlit-twitter-stream" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tweet_visu/streamlit-twitter-stream" vcs="Git" />
   </component>
 </project>

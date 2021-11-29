@@ -26,8 +26,9 @@ colnames = []
 first = True
 for ticker in choice3:
     data = yf.download(ticker, start=start, end=end, group_by="ticker")
-    ticker3 = st.sidebar.selectbox('Choisir une valeur', data.columns)
+
     if first:
+        ticker3 = st.sidebar.selectbox('Choisir une valeur', data.columns)
         combined = data[[ticker3]].copy()
         colnames.append(ticker)
         combined.columns = colnames
@@ -37,7 +38,7 @@ for ticker in choice3:
         colnames.append(ticker)
         combined.columns = colnames
 
-st.title('Correlation between features')
+st.title('Corrélation')
 fig3 = plt.figure()
 sns.heatmap(combined.corr())
 st.pyplot(fig3)

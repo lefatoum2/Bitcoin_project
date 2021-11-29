@@ -10,18 +10,15 @@ import matplotlib.pyplot as plt
 # Détermination des dates
 start1 = dt.datetime.today() - dt.timedelta(2 * 365)
 end1 = dt.datetime.today()
-
 start = st.sidebar.date_input('Date de début', start1)
-
 end = st.sidebar.date_input('Date de fin', end1)
 
 # Sidebar
 choice1 = ["BTC", "BNB", "SOL1", "USDT", "ETH", "ADA"]
 choice2 = ["EUR", "USD"]
 ticker2 = st.sidebar.selectbox('Choisir une monnaie..', choice2)
-
-
 choice3 = [f"BTC-{ticker2}", f"BNB-{ticker2}", f"SOL1-{ticker2}", f"USDT-{ticker2}", f"ETH-{ticker2}", f"ADA-{ticker2}"]
+
 colnames = []
 first = True
 for ticker in choice3:
@@ -39,6 +36,7 @@ for ticker in choice3:
         combined.columns = colnames
 
 st.title('Corrélation')
-fig3 = plt.figure()
-sns.heatmap(combined.corr())
-st.pyplot(fig3)
+
+fig, ax = plt.subplots()
+sns.heatmap(combined.corr(), ax=ax)
+st.write(fig)

@@ -4,20 +4,35 @@ import numpy as np
 import pandas as pd
 import matplotlib as plt
 from datetime import date, datetime
-
+import datetime as dt
 from cryptocmd import CmcScraper
 from fbprophet import Prophet
 from fbprophet.plot import plot_plotly
 from plotly import graph_objs as go
+import yfinance as yf
 
 st.title('Crypto Forecaster')
 
+# Détermination des dates
+start1 = dt.datetime.today() - dt.timedelta(2 * 365)
+end1 = dt.datetime.today()
+start = st.sidebar.date_input('Date de début', start1)
+end = st.sidebar.date_input('Date de fin', end1)
+
+# Sidebar
+choice1 = ["BTC", "BNB", "SOL1", "USDT", "ETH", "ADA"]
+choice2 = ["EUR", "USD"]
+ticker2 = st.sidebar.selectbox('Choisir une monnaie..', choice2)
+choice3 = [f"BTC-{ticker2}", f"BNB-{ticker2}", f"SOL1-{ticker2}", f"USDT-{ticker2}", f"ETH-{ticker2}", f"ADA-{ticker2}"]
+if ticker2:
+    ticker3 = st.sidebar.selectbox('Choisir votre bitcoin..', choice3)
 
 ### Select ticker & number of days to predict on
 selected_ticker = st.sidebar.text_input("Select a ticker for prediction (i.e. BTC, ETH, LINK, etc.)", "BTC")
 period = int(st.sidebar.number_input('Number of days to predict:', min_value=0, max_value=1000000, value=365, step=1))
 training_size = int(st.sidebar.number_input('Training set (%) size:', min_value=10, max_value=100, value=100, step=5)) / 100
 
+data = yf.download(ticker, start=start, end=end, group_by="ticker")
 
 ### Initialise scraper without time interval
 @st.cache
@@ -29,9 +44,9 @@ def load_data(selected_ticker):
     return min_date, max_date
 
 
-data_load_state = st.sidebar.text('Loading data...')
+data_load_state = st.sidebar.text('Chargement data...')
 min_date, max_date = load_data(selected_ticker)
-data_load_state.text('Loading data... done!')
+data_load_state.text('Data chargée!')
 
 ### Select date range
 date_range = st.sidebar.selectbox("Select the timeframe to train the model on:",options=["All available data", "Specific date range"])

@@ -1,8 +1,7 @@
 import yfinance as yf
 import streamlit as st
 import datetime as dt
-import pandas as pd
-import requests
+
 
 # Détermination des dates
 start1 = dt.datetime.today() - dt.timedelta(2 * 365)
@@ -22,6 +21,7 @@ if ticker2:
     for ticker in ticker3:
         data = yf.download(ticker, start=start, end=end, group_by="ticker")
         if first:
+            metric = st.sidebar.selectbox('Choisir la valeur..', data.columns)
             combined = data[[metric]].copy()
             colnames.append(ticker)
             combined.columns = colnames

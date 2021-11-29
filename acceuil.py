@@ -1,8 +1,4 @@
-import yfinance as yf
 import streamlit as st
-import datetime as dt
-import pandas as pd
-import requests
 from PIL import Image
 
 

@@ -14,3 +14,7 @@ streamlit run main.py
 ```
 
 https://bitcoin1491.herokuapp.com/
+
+![img6](./images/bitcoin1.png)
+
+![img5](./images/bitcoin2.png)

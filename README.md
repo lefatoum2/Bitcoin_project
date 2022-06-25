@@ -1,4 +1,5 @@
 # Bitcoin_project
+Nous avons créé une application permettant de suivre l'évolution des principaux bitcoins au jour le jour grâce à l'API yFinance et l'outil Streamlit. On peut aussi voir les corrélations entre les différentes valeurs.
 
 ## Installation
 

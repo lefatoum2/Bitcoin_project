@@ -1,4 +1,6 @@
 # Bitcoin_project
+
+![img6](https://cryptoast.fr/wp-content/uploads/2019/10/acheter-bitcoin.jpg)
 Nous avons créé une application permettant de suivre l'évolution des principaux bitcoins au jour le jour grâce à l'API yFinance et l'outil Streamlit. On peut aussi voir les corrélations entre les différentes valeurs.
 
 ## Installation

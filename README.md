@@ -6,6 +6,8 @@ Nous avons créé une application permettant de suivre l'évolution des principa
 ## Installation
 
 ```
+git clone https://github.com/lefatoum2/Bitcoin_project.git
+cd Bitcoin_project
 pip install -r requirements.txt
 ```
 

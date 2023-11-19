@@ -7,7 +7,7 @@ import pred6
 import graph5
 
 # Title of the Application
-st.markdown("Christian MBARGA, Julien SISAVATH, Valentin VERMES")
+st.markdown("Christian M., Julien S., Valentin V.")
 
 # Choice of page
 # page_choices = {"Home": acceuil, "Graphes": graph, "Twitter": twit, "Reddit": reddit1, "Corrélations":corre, "Prédictions": pred}
